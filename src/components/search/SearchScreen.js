@@ -16,13 +16,14 @@ export const SearchScreen = ({ history }) => {
     } );
 
     const { searchText } = formValues;
+    
+    const heroFiltered = heroes;
 
     const handleSearch = (e) => {
         e.preventDefault();
         history.push(`?q=${searchText}`);
     }
 
-    const heroFiltered = heroes;
     return (
         <div>
             <h1>Search Screen</h1>
