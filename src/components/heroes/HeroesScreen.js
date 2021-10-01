@@ -1,10 +1,9 @@
 import React, { useMemo } from 'react';
 import { useParams, Redirect } from 'react-router-dom';
 import { getHeroById } from '../../selector/getHeroById';
+import { heroImages } from '../../helpers/heroImages';
 
 // import batman from '../../assets/heroes/dc-batman.jpg';
-
-const heroImages = require.context('../../assets/heroes', true);
 
 export const HeroesScreen = ({history}) => {
 
