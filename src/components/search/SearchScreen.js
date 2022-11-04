@@ -18,6 +18,7 @@ export const SearchScreen = ({ history }) => {
     const { searchText } = formValues;
     
     const heroFiltered = useMemo(() => getHeroByName( q ), [q]) ;
+    console.log('heroFiltered', heroFiltered)
 
     const handleSearch = (e) => {
         e.preventDefault();
